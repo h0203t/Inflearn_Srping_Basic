@@ -5,7 +5,7 @@ public class Member {
     private String name;
     private Grade Grade;
 
-    public Member(Long id, String name, com.example.inflearn_srping_basic.member.Grade grade) {
+    public Member(Long id, String name, Grade grade) {
         this.id = id;
         this.name = name;
         Grade = grade;
