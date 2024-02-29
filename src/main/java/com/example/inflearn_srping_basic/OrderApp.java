@@ -1,9 +1,7 @@
 package com.example.inflearn_srping_basic;
 
-import com.example.inflearn_srping_basic.member.Grade;
-import com.example.inflearn_srping_basic.member.Member;
-import com.example.inflearn_srping_basic.member.MemberService;
-import com.example.inflearn_srping_basic.member.MemberServiceImpl;
+import com.example.inflearn_srping_basic.discount.FixDiscountPolicy;
+import com.example.inflearn_srping_basic.member.*;
 import com.example.inflearn_srping_basic.order.Order;
 import com.example.inflearn_srping_basic.order.OrderService;
 import com.example.inflearn_srping_basic.order.OrderServiceImpl;
@@ -11,8 +9,10 @@ import com.example.inflearn_srping_basic.order.OrderServiceImpl;
 public class OrderApp {
 
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
-        OrderService orderService = new OrderServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+        OrderService orderService = appConfig.orderService();
+
 
         Long memberId = 1L;
         Member member = new Member(1L, "memberA", Grade.VIP);

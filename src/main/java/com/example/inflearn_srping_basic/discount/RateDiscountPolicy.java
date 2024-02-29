@@ -5,7 +5,7 @@ import com.example.inflearn_srping_basic.member.Member;
 
 public class RateDiscountPolicy implements DiscountPolicy {
 
-    private int discountPercent = 10;
+    int discountPercent = 10;
 
     @Override
     public int discount(Member member, int price) {
