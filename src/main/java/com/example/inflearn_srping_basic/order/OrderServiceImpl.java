@@ -2,6 +2,7 @@ package com.example.inflearn_srping_basic.order;
 
 import com.example.inflearn_srping_basic.discount.DiscountPolicy;
 import com.example.inflearn_srping_basic.discount.FixDiscountPolicy;
+import com.example.inflearn_srping_basic.discount.RateDiscountPolicy;
 import com.example.inflearn_srping_basic.member.Member;
 import com.example.inflearn_srping_basic.member.MemberRepository;
 import com.example.inflearn_srping_basic.member.MemoryMemberRepository;
