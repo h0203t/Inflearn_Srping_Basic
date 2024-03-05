@@ -13,7 +13,6 @@ public class OrderApp {
         MemberService memberService = appConfig.memberService();
         OrderService orderService = appConfig.orderService();
 
-
         Long memberId = 1L;
         Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
