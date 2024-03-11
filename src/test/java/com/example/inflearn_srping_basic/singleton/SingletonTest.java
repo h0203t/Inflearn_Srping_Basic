@@ -31,7 +31,7 @@ public class SingletonTest {
     }
 
     @Test
-    @DisplayName("씽글톤 패턴을 적용한 객체 사용")
+    @DisplayName("싱글톤 패턴을 적용한 객체 사용")
     void singletonService() {
         SingletonService singletonService1 = SingletonService.getInstance();
         SingletonService singletonService2 = SingletonService.getInstance();
