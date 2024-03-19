@@ -2,7 +2,10 @@ package com.example.inflearn_srping_basic.discount;
 
 import com.example.inflearn_srping_basic.member.Grade;
 import com.example.inflearn_srping_basic.member.Member;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FixDiscountPolicy implements DiscountPolicy {
 
     int discountFixAmount = 1000; // 1000원 할인
