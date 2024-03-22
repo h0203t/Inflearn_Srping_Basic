@@ -29,6 +29,7 @@ public class AppConfig {
                 memberRepository(),
                 discountPolicy());
     }
+
     @Bean
     public MemberRepository memberRepository() {
         //2번? 3번?
